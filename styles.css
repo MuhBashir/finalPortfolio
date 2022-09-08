@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(15, 15, 15);
+}
+
+#navbar {
+  background-color: rgb(155, 41, 41);
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-right: 5rem;
+}
+
+ul li {
+  padding-left: 5rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  text-transform: capitalize;
+}
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+p {
+  text-align: center;
+  color: wheat;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-bottom: 2rem;
+  text-shadow: 2px 3px 1px brown;
+}
+
+p {
+  font-size: 3rem;
+  color: brown;
+}
+
+#projects {
+  background-color: rgb(28, 117, 201);
+  padding-top: 4rem;
+}
+
+#projects > p {
+  color: brown;
+  text-shadow: 2px 4px 2px wheat;
+  font-size: 4rem;
+}
+
+hr {
+  height: 2px;
+  width: 90vw;
+  margin: 0 auto 3rem auto;
+}
+
+.project-tile,
+.section-img {
+  display: block;
+}
+
+.section-img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding-bottom: 12rem;
+}
+
+.project-tile {
+  padding: 0 3rem;
+}
+
+.project-title {
+  background-color: rgb(4, 10, 10);
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: aqua;
+}
+
+.code {
+  color: rgb(4, 10, 10);
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+  color: aqua;
+  cursor: pointer;
+}
+
+.contact-section {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-header {
+  margin-bottom: 5rem;
+}
+
+.contact-header > h2 {
+  color: wheat;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-family: cursive;
+  text-shadow: 2px 2px brown;
+}
+
+.contact-header p {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.contact-header p::first-letter {
+  text-transform: capitalize;
+}
+
+.contact-header > h2::first-letter {
+  text-transform: capitalize;
+}
+
+.social-links {
+  padding-left: 2rem;
+}
+
+#hr {
+  color: brown;
+  width: 100vw;
+}
+
+footer {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+#footer-p,
+span {
+  color: wheat;
+  font-size: 2rem;
+}
+
+span {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
