@@ -172,10 +172,11 @@ hr {
 .fa-twitter,
 .fa-envelope,
 .fa-phone-volume {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .social-links {
+  margin-bottom: 1.2rem;
   transition: transform 0.3s ease-out;
 }
 
