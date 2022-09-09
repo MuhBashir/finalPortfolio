@@ -202,6 +202,10 @@ span {
   font-size: 1.5rem;
 }
 
+#footer-p {
+  padding-right: 10rem;
+}
+
 span {
   display: block;
 }
