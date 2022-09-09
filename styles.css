@@ -201,7 +201,7 @@ footer {
 #footer-p,
 span {
   color: wheat;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 span {
@@ -213,4 +213,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media screen and (min-width: 576px) {
 }
