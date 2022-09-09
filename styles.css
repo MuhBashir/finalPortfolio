@@ -158,8 +158,29 @@ hr {
   text-transform: capitalize;
 }
 
-.social-links {
+.contact-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 50%;
+}
+
+.fa-facebook,
+.fa-github,
+.fa-twitter,
+.fa-envelope,
+.fa-phone-volume {
   padding-left: 2rem;
+}
+
+.social-links {
+  transition: transform 0.3s ease-out;
+}
+
+.social-links:hover {
+  transform: translateY(8px);
 }
 
 #hr {
